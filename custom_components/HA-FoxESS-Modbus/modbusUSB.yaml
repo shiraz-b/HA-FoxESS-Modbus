@@ -24,7 +24,7 @@
 # ---------------------------------------------------------------------------
 
   sensors:
-    - name: "PV1-Voltage"
+    - name: "foxess-modbus-PV1-Voltage"
       scan_interval: 30
       slave: 247
       address: 11000
@@ -35,7 +35,7 @@
       precision: 1
       input_type: input
       device_class: voltage
-    - name: "PV1-Current"
+    - name: "foxess-modbus-PV1-Current"
       scan_interval: 30
       slave: 247
       address: 11001
@@ -46,7 +46,7 @@
       precision: 1
       input_type: input      
       device_class: current
-    - name: "PV1-Power"
+    - name: "foxess-modbus-PV1-Power"
       scan_interval: 5
       slave: 247
       address: 11002
@@ -57,7 +57,7 @@
       precision: 3
       input_type: input      
       device_class: power
-    - name: "PV2-Voltage"
+    - name: "foxess-modbus-PV2-Voltage"
       scan_interval: 30
       slave: 247
       address: 11003
@@ -68,7 +68,7 @@
       precision: 1
       input_type: input
       device_class: voltage
-    - name: "PV2-Current"
+    - name: "foxess-modbus-PV2-Current"
       scan_interval: 30
       slave: 247
       address: 11004
@@ -79,7 +79,7 @@
       precision: 1
       input_type: input      
       device_class: current
-    - name: "PV2-Power"
+    - name: "foxess-modbus-PV2-Power"
       scan_interval: 5
       slave: 247
       address: 11005
@@ -90,7 +90,7 @@
       precision: 3
       input_type: input  
       device_class: power
-    - name: "Battery-SoC"
+    - name: "foxess-modbus-Battery-SoC"
       scan_interval: 30
       slave: 247
       address: 11036
@@ -99,7 +99,7 @@
       data_type: int16
       input_type: input
       device_class: battery
-    - name: "Battery-Temp"
+    - name: "foxess-modbus-Battery-Temp"
       scan_interval: 60
       slave: 247
       address: 11038
@@ -110,7 +110,7 @@
       data_type: int16
       input_type: input
       device_class: temperature
-    - name: "Battery-Discharge-Power"
+    - name: "foxess-modbus-Battery-Discharge-Power"
       scan_interval: 5
       slave: 247
       address: 11008
@@ -121,7 +121,7 @@
       precision: 3
       input_type: input    
       device_class: power
-    - name: "Load Power"
+    - name: "foxess-modbus-Load-Power"
       scan_interval: 5
       slave: 247
       address: 11023
@@ -132,7 +132,7 @@
       precision: 3
       input_type: input    
       device_class: power
-    - name: "InvBatVolt"
+    - name: "foxess-modbus-InvBatVolt"
       scan_interval: 30
       slave: 247
       address: 11006
@@ -142,7 +142,7 @@
       scale: 0.1
       precision: 1
       input_type: input
-    - name: "InvBatPower"
+    - name: "foxess-modbus-InvBatPower"
       scan_interval: 5
       slave: 247
       address: 11007
@@ -152,7 +152,7 @@
       scale: 0.01
       precision: 2
       input_type: input
-    - name: "RVolt"
+    - name: "foxess-modbus-RVolt"
       scan_interval: 30
       slave: 247
       address: 11009
@@ -163,7 +163,7 @@
       precision: 1
       input_type: input
       device_class: voltage
-    - name: "RCurrent"
+    - name: "foxess-modbus-RCurrent"
       scan_interval: 30
       slave: 247
       address: 11010
@@ -174,7 +174,7 @@
       precision: 1
       input_type: input
       device_class: current
-    - name: "RFreq"
+    - name: "foxess-modbus-RFreq"
       scan_interval: 30
       slave: 247
       address: 11014
@@ -185,7 +185,7 @@
       precision: 3
       input_type: input
       device_class: frequency
-    - name: "EPS RVolt"
+    - name: "foxess-modbus-EPS-RVolt"
       scan_interval: 30
       slave: 247
       address: 11015
@@ -195,7 +195,7 @@
       scale: 0.1
       precision: 1
       input_type: input
-    - name: "Grid CT"
+    - name: "foxess-modbus-Grid-CT"
       scan_interval: 5
       slave: 247
       address: 11021
@@ -205,7 +205,7 @@
       scale: 0.001
       precision: 3
       input_type: input
-    - name: "CT2 Meter"
+    - name: "foxess-modbus-CT2-Meter"
       scan_interval: 1
       slave: 247
       address: 11022
@@ -215,7 +215,7 @@
       scale: 0.001
       precision: 3
       input_type: input
-    - name: "InvTemp"
+    - name: "foxess-modbus-InvTemp"
       scan_interval: 30
       slave: 247
       address: 11024
@@ -226,7 +226,7 @@
       precision: 1
       device_class: temperature
       input_type: input
-    - name: "AmbTemp"
+    - name: "foxess-modbus-AmbTemp"
       scan_interval: 30
       slave: 247
       address: 11025
@@ -237,7 +237,7 @@
       precision: 1
       device_class: temperature
       input_type: input
-    - name: "BatVolt"
+    - name: "foxess-modbus-BatVolt"
       scan_interval: 30
       slave: 247
       address: 11034
@@ -248,7 +248,7 @@
       precision: 1
       device_class: voltage
       input_type: input
-    - name: "Temp"
+    - name: "foxess-modbus-Temp"
       scan_interval: 30
       slave: 247
       address: 11035

@@ -8,6 +8,8 @@
 
 **A community maintained Home Assistant integration using local native polling of Modbus data using RS485 to enable near realtime data access, with no reliance on the FoxESS cloud portal**
 
+**Fork from https://github.com/StealthChesnut/HA-FoxESS-Modbus**
+
 ![image](https://user-images.githubusercontent.com/6324545/166502285-eb0ca405-05a3-4722-a698-36e3e6b0f60d.png)
 
 

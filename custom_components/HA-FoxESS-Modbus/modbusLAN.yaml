@@ -1,11 +1,11 @@
 # v0.9
-# Created by https://github.com/StealthChesnut/HA-FoxESS-Modbus
+# Created by https://github.com/StealthChesnut/HA_FoxESS_Modbus
 # Modbus Config for Fox ESS Hybrid H1 Inverter
   
 # ---------------------------Direct LAN Connection----------------------------------------
 #  For use when connecting direct to LAN port of inverter
 #
-#- name: HA-FoxESS-Modbus-LAN
+#- name: HA_FoxESS_Modbus_LAN
   type: tcp
   host: !secret FoxESSInverterIP # set to USR devices ip address
   port: 502
@@ -14,7 +14,7 @@
 # Uncomment the sensors you wish to use
 
   sensors:
-    - name: "PV1-Voltage"
+    - name: "foxess_modbus_pv1_voltage"
       scan_interval: 30
       slave: 247
       address: 31000
@@ -25,7 +25,7 @@
       precision: 1
       input_type: holding
       device_class: voltage
-    - name: "PV1-Current"
+    - name: "foxess_modbus_pv1_current"
       scan_interval: 30
       slave: 247
       address: 31001
@@ -36,7 +36,7 @@
       precision: 1
       input_type: holding      
       device_class: current
-    - name: "PV1-Power"
+    - name: "foxess_modbus_pv1_power"
       scan_interval: 5
       slave: 247
       address: 31002
@@ -47,7 +47,7 @@
       precision: 3
       input_type: holding      
       device_class: power
-    - name: "PV2-Voltage"
+    - name: "foxess_modbus_pv2_voltage"
       scan_interval: 30
       slave: 247
       address: 31003
@@ -58,7 +58,7 @@
       precision: 1
       input_type: holding
       device_class: voltage
-    - name: "PV2-Current"
+    - name: "foxess_modbus_pv2_current"
       scan_interval: 30
       slave: 247
       address: 31004
@@ -69,7 +69,7 @@
       precision: 1
       input_type: holding      
       device_class: current
-    - name: "PV2-Power"
+    - name: "foxess_modbus_pv2_power"
       scan_interval: 5
       slave: 247
       address: 31005
@@ -81,7 +81,7 @@
       input_type: holding  
       device_class: power
 
-    - name: "RVolt" # Grid Voltage
+    - name: "foxess_modbus_rvolt" # Grid Voltage
       scan_interval: 30
       slave: 247
       address: 31006
@@ -92,7 +92,7 @@
       scale: 0.1
       input_type: holding
       device_class: voltage
-    - name: "RCurrent" # Generated AC Current ?
+    - name: "foxess_modbus_rcurrent" # Generated AC Current ?
       scan_interval: 30
       slave: 247
       address: 31007
@@ -103,7 +103,7 @@
       precision: 1
       input_type: holding
       device_class: current
-    - name: "31008" # Generated AC Watts ?
+    - name: "foxess_modbus_31008" # Generated AC Watts ?
       scan_interval: 5
       slave: 247
       address: 31008
@@ -114,7 +114,7 @@
       precision: 3
       input_type: holding  
       device_class: power
-    - name: "RFreq" # Grid Frequency
+    - name: "foxess_modbus_rfreq" # Grid Frequency
       scan_interval: 30
       slave: 247
       address: 31009
@@ -126,7 +126,7 @@
       input_type: holding
       device_class: frequency
       
-    - name: "Grid CT"
+    - name: "foxess_modbus_grid_ct"
       scan_interval: 5
       address: 31014
       state_class: measurement
@@ -136,7 +136,7 @@
       precision: 3
       input_type: holding    
       device_class: power
-    - name: "Load Power"
+    - name: "foxess_modbus_load_power"
       scan_interval: 5
       address: 31016
       state_class: measurement
@@ -147,7 +147,7 @@
       input_type: holding    
       device_class: power
     
-    - name: "AmbTemp"
+    - name: "foxess_modbus_amb_temp"
       scan_interval: 30
       slave: 247
       address: 31018
@@ -158,7 +158,7 @@
       precision: 1
       device_class: temperature
       input_type: holding    
-    - name: "InvTemp"
+    - name: "foxess_modbus_inv_temp"
       scan_interval: 30
       slave: 247
       address: 31019
@@ -172,7 +172,7 @@
       
 
 
-    - name: "BatVolt"
+    - name: "foxess_modbus_bat_volt"
       scan_interval: 30
       address: 31020
       state_class: measurement
@@ -182,7 +182,7 @@
       precision: 1
       device_class: voltage
       input_type: holding
-    - name: "BatCurrent"
+    - name: "foxess_modbus_bat_current"
       scan_interval: 30
       address: 31021
       state_class: measurement
@@ -192,7 +192,7 @@
       precision: 1
       input_type: holding      
       device_class: current
-    - name: "Battery-Discharge-Power"
+    - name: "foxess_modbus_battery_discharge_power"
       scan_interval: 5
       slave: 247
       address: 31022
@@ -203,7 +203,7 @@
       precision: 3
       input_type: holding    
       device_class: power
-    - name: "Battery-Temp"
+    - name: "foxess_modbus_battery_temp"
       scan_interval: 60
       slave: 247
       address: 31023
@@ -214,7 +214,7 @@
       data_type: int16
       input_type: holding
       device_class: temperature
-    - name: "Battery-SoC"
+    - name: "foxess_modbus_battery_soc"
       scan_interval: 30
       slave: 247
       address: 31024
